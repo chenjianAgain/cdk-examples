@@ -46,7 +46,7 @@ export class EC2BasicsStack extends cdk.Stack {
 const app = new cdk.App();
 new EC2BasicsStack(app, "EC2BasicsStack", {
     env: {
-        region: process.env.AWS_REGION,
-        account: process.env.ACCOUNT_ID
+        region: 'us-west-1',
+        account: '374801192098'
     }
 });
